@@ -2,6 +2,10 @@
 
 int main(void)
 {
+/**
+ *main - main entry point
+ *return : return always 0
+ */
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
