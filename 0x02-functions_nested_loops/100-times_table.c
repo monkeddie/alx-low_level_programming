@@ -21,6 +21,6 @@ void print_times_table(int n)
 				printf(", ");
 			printf("%d", result);
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 }
