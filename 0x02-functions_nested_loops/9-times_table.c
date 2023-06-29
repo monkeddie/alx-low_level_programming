@@ -19,10 +19,6 @@ void times_table(void)
 		}
 		putchar('\n');
 	}
-}
-
-int main(void)
-{
 	times_table();
 
 	return (0);
