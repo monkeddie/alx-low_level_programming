@@ -4,36 +4,22 @@
  * Description: code to prinf 50 fibonacci numbers
  * Return: Always 0
  **/
-void fibonacci_sequence(int n, int sequence[]);
 int main(void)
 {
-	int i;
-	int fib_sequence[50];
+	int prev1 = 1;  /** First number **/
+	int prev2 = 2;  /** Second number **/
 
-	/** Generate the Fibonacci sequence */
-	fibonacci_sequence(50, fib_sequence);
+	printf("%d, %d", prev1, prev2);
 
-	/** Print the Fibonacci numbers separated by comma and space */
-	for (i = 2; i < 50; i++)
+	for (int i = 2; i < 50; i++)
 	{
-	printf("%d", fib_sequence[i]);
-	if (i != 49)
-		{
-		printf(", ");
-		}
+	int current = prev1 + prev2;
+	printf(", %d", current);
+
+	prev1 = prev2;	/** So that the next num takes the value of the previous num**/
+	prev2 = current;
 	}
 	printf("\n");
+
 	return (0);
-}
-void fibonacci_sequence(int n, int sequence[]) 
-{
-	int i;
-
-	sequence[0] = 1;  /** First number */
-	sequence[1] = 2;  /** Second number */
-
-	for (i = 2; i < n; i++) 
-	{
-	sequence[i] = sequence[i - 1] + sequence[i - 2];
-	}
 }
