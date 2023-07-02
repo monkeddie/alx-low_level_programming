@@ -7,6 +7,7 @@
 void fibonacci_sequence(int n, int sequence[]);
 int main(void)
 {
+	int i;
 	int fib_sequence[50];
 
 	fib_sequence[0] = 1;  /** First number */
