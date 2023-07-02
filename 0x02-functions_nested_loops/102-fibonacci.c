@@ -17,7 +17,7 @@ int main(void)
 	fibonacci_sequence(50, fib_sequence);
 
 	/** Print the Fibonacci numbers separated by comma and space */
-	for (int i = 2; i < 50; i++)
+	for (i = 2; i < 50; i++)
 	{
 	printf("%d", fib_sequence[i]);
 	if (i != 49)
