@@ -8,10 +8,11 @@ int main(void)
 {
 	long int prev1 = 1;  /** First number **/
 	long int prev2 = 2;  /** Second number **/
+	int i;
 
 	printf("%ld, %ld", prev1, prev2);
 
-	for (int i = 2; i < 50; i++)
+	for (i = 2; i < 50; i++)
 	{
 	long int current = prev1 + prev2;
 
