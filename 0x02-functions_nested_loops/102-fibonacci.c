@@ -27,3 +27,15 @@ int main(void)
 	printf("\n");
 	return (0);
 }
+void fibonacci_sequence(int n, int sequence[]) 
+{
+	int i;
+
+	sequence[0] = 1;  /** First number */
+	sequence[1] = 2;  /** Second number */
+
+	for (i = 2; i < n; i++) 
+	{
+	sequence[i] = sequence[i - 1] + sequence[i - 2];
+	}
+}
