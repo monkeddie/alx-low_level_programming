@@ -10,14 +10,11 @@ int main(void)
 	int i;
 	int fib_sequence[50];
 
-	fib_sequence[0] = 1;  /** First number */
-	fib_sequence[1] = 2;  /** Second number */
-
 	/** Generate the Fibonacci sequence */
 	fibonacci_sequence(50, fib_sequence);
 
 	/** Print the Fibonacci numbers separated by comma and space */
-	for (i = 0; i < 50; i++)
+	for (i = 2; i < 50; i++)
 	{
 	printf("%d", fib_sequence[i]);
 	if (i != 49)
