@@ -14,12 +14,12 @@ int main(void)
 
 	printf("%lu, %lu, ", prev1, prev2);
 
-	for (i; i <= 98; i++)
+	for (i = 3; i <= 98; i++)
 	{
 		current = prev1 + prev2;
 		printf("%lu", current);
 
-		if (i <= 98)
+		if (i != 98)
 		{
 			printf(", ");
 		}
