@@ -8,16 +8,16 @@
 int main(void)
 {
 	int i;
-	unsigned int prev1 = 1;
-	unsigned int prev2 = 2;
-	unsigned int current = 0;
+	unsigned long int prev1 = 1;
+	unsigned long int prev2 = 2;
+	unsigned long int current = 0;
 
-	printf("%u, %u", prev1, prev2);
+	printf("%lu, %lu, ", prev1, prev2);
 
-	for (i = 3; i <= 98; i++)
+	for (i = 2; i <= 98; i++)
 	{
 		current = prev1 + prev2;
-		printf("%u", current);
+		printf("%lu", current);
 
 		if (i <= 98)
 		{
