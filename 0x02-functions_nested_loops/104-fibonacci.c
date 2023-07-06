@@ -17,7 +17,12 @@ int main(void)
 	for (i = 3; i <= 98; i++)
 	{
 		current = prev1 + prev2;
-		printf(", %u", current);
+		printf("%u", current);
+
+		if (i <= 98)
+		{
+			printf(", ");
+		}
 		prev1 = prev2;
 		prev2 = current;
 	}
