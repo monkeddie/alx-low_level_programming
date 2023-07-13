@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "main.h"
 #include <limits.h>
+
 /**
  * malloc_checked - Allocate memory using malloc
  * @b: Number of bytes to allocate
@@ -12,11 +13,13 @@
 
 void *malloc_checked(unsigned int b)
 {
-	void *ab = malloc(b);
+	int* ab;
+	
+	ab = malloc(b);
 
 	if (ab == NULL)
 	{
-		fprintf(stderr, "Memory allocation failled.\n");
+		fprintf(stderr, "Memory allocation failed.\n");
 		exit(98); /* Terminate the process with status value 98 */
 	}
 
